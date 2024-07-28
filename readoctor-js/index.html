@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Phothing by Nikita</title>
+</head>
+<body>
+    <header class="options">
+        <div class="logotype">
+            <span class="logotype__text">Editor</span>
+        </div>
+        <div class="options-menu">
+            <div class="file-options">
+                <button class="save" id="save-btn"><img src="./images/download-solid.svg" alt="save" class = 'save__img'></button>
+                <input type="file" id="upload" accept="image/*" style="display: none">
+                <button class="load" id="upload-btn"><img src="./images/floppy-disk-solid.svg" alt="upload" class = 'save__img'></button>
+            </div>
+            <div class="brushes-option" id="brushes-option">
+                <div class="size-container">
+                    <button class="size" id="increaseSize">+</button>
+                    <button class="size" id="decreaseSize">-</button>
+                    <input type="text" class="textbox_option" id="textbox_option" />
+                </div>
+                <span id="brushSize">Размер кисти: 10</span>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="link">by withnikita</a>
+        </div>
+    </header>
+    <main>
+        <div class="tools" id='tools'>
+            <div class="tools-header">
+                <button class="open-tools" id="open-tools">
+                    <img src="./images/arrow-right-solid.svg" alt="arrow" class="open-tools__image" id="open-tools">
+                </button>
+            </div>
+            <div class="tools-menu">
+                <button class="brush" id="brush"><img src="./images/paintbrush-solid.svg" alt="paint-brush" class="brush__image"></button>
+                <button class="eraser" id="eraser"><img src="./images/eraser-solid.svg" alt="eraser" class="eraser__image"></button>
+                <button class="colors" id="colors"><img src="./images/fill-drip-solid.svg" alt="fill-drip" class="fill__image"></button>
+                <input type="color" id="colorPicker" style="display: none;">
+            </div>
+        </div>
+
+        <div class="window">
+            <canvas id="canvas"></canvas>
+        </div>
+    </main>
+    
+    <script src='./js/open-window.js'></script>
+    <script src='./js/canvas.js'></script>
+
+</body>
+</html>

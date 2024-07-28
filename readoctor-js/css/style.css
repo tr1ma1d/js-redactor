@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+:root {
+    --header-color: white;
+}
+
+.options {
+    width: 100%;
+    height: 50px;
+    background-color: var(--header-color);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.textbox_option{
+    height: 20px;
+    width: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.options-menu {
+    display: flex;
+    opacity: 1;
+}
+
+.file-options,
+.brushes-option {
+    margin: 0 2.5px;
+}
+.brushes-option{
+    opacity: 0;
+    transform: 2s opacity;
+}
+
+
+.save,
+.load,
+.size {
+    width: 25px;
+    height: 25px;
+}
+.save__img{
+    width: 15px;
+    height: 15px;
+}
+.brush,
+.eraser,
+.colors {
+    width: 35px;
+    height: 35px;
+    margin: 5px 0;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.brush:hover,
+.eraser:hover,
+.colors:hover{
+    transition: 0.15s background-color ease-in-out;
+    background-color: rgb(173, 170, 170);
+    cursor: pointer;
+   
+}
+
+
+.logotype__text,
+.link {
+    font: 400 18px/18px 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+.window {
+    width:  800px;
+    height: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 400px;
+    top: 200px;
+    left: 0px;
+    background-color: #f0ebeb;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    transition: width 2s;
+    position: absolute;
+}
+
+.tools-menu {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+
+
+}
+#brushSize{
+    font-family: 'Montserrat', sans-serif;
+}
+.tools-header {
+    display: flex;
+    justify-content: end;
+}
+
+.open-tools {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: none;
+    background-color: white;
+    
+
+}
+.open-tools:hover{
+    cursor: pointer;
+    transition: 0.15s background-color ease-in-out;
+    background-color: rgb(173, 170, 170);
+}
+
+.open-tools__image {
+    width: 18px;
+    margin-top: 1px;
+}
+
+.tools.open-tools {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 400px;
+    background-color: #f0ebeb;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+
+}
+
+
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.brush__image,
+.eraser__image,
+.fill__image{
+    width: 22px;
+}
+
